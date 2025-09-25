@@ -6,6 +6,8 @@ const Task = (props) =>  {
         <div className="card">
             <p className="title">{props.title}</p>
             <p>Due: {props.deadline}</p>
+            <p className="description">{props.description}</p>
+            <p className="priority">Priority: {props.priority}</p>
             <p>{props.children}</p>
         </div>
     )
