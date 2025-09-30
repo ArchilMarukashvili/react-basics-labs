@@ -14,7 +14,7 @@ function App() {
     { id: 3, title: "Tidy up", deadline: "Today", description: "Clean up living room", priority: "Low", done: false }
   ]
 
-  });
+  }); 
 
     const doneHandler = (taskIndex) => {
     const tasks = [...taskState.tasks];

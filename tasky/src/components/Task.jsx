@@ -13,6 +13,15 @@ const Task = (props) =>  {
             <p>{props.children}</p>
             <button onClick={props.markDone} className='doneButton'>Done</button>
             <button onClick={props.deleteTask}className='deleteButton'>Delete</button>
+            <p style = {{
+                backgroundColor: props.priority === 'High' ? 'red' :
+                props.priority === 'Medium' ? 'orange' :
+                'green',
+                padding: "0.2em",
+                borderRadius: "0.4em"
+                
+            }} ></p>
+                {props.priority}
 
 
         </div>   
